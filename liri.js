@@ -16,6 +16,9 @@ switch(liriArguments) {
     case "my-tweets":
         myTweets();
         break;
+    case "spotify-this-song":
+        mySpotify();
+        break;
     default:
         console.log("Please type in your arguments carefully")
 }
@@ -53,4 +56,41 @@ function myTweets() {
     }
     });
 
+}
+
+function mySpotify() {
+    var Spotify = require('node-spotify-api');
+    
+    var spotify = new Spotify({
+    id: keys.spotify.id,
+    secret: keys.spotify.secret
+    });
+
+    if(process.argv[3]) {
+        songName = process.argv[3];
+    } else {
+        songName = "The Sign";
+    }
+    
+    spotify
+    .search({ type: 'track', query: songName })
+    .then(function(response) {
+        var songsInfo = response.tracks.items;
+
+        for(i=0;i<songsInfo.length;i++) {
+            // console.log(response.tracks.items[i]);
+            var count = i+1;
+          
+            console.log("---------"+ count +"---------")
+            console.log("Artist: " + songsInfo[i].artists[0].name);
+            console.log("Song: " + songsInfo[i].name);
+            console.log("Album: " + songsInfo[i].album.name);
+            console.log("Preview: " + songsInfo[i].preview_url);
+            console.log ("");
+            
+        }
+    })
+    .catch(function(err) {
+        console.log(err);
+    });
 }
