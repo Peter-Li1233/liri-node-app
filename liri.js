@@ -8,6 +8,12 @@ var keys = require("./key.js");
 // console.log(keys);
 // console.log(keys.twitter.access_token_key);
 
+//get the reference to "node-spotify-api";
+var Spotify = require('node-spotify-api');
+
+//get the reference to "fs" pakcage;
+var fs = require("fs");
+
 //get the reference to "request" package;
 var request = require("request");
 
@@ -24,6 +30,9 @@ switch(liriArguments) {
         break;
     case "movie-this":
         movieThis();
+        break;
+    case "do-what-it-says":
+        doWhatItSay();
         break;
     default:
         console.log("Please type in your arguments carefully")
@@ -64,18 +73,23 @@ function myTweets() {
 
 }
 
-function mySpotify() {
-    var Spotify = require('node-spotify-api');
+function mySpotify(song) {
+    //var Spotify = require('node-spotify-api');
     
     var spotify = new Spotify({
     id: keys.spotify.id,
     secret: keys.spotify.secret
     });
 
-    if(process.argv[3]) {
-        songName = process.argv[3];
+    if(!song) {
+
+        if(process.argv[3]) {
+            songName = process.argv[3];
+        } else {
+            songName = "The Sign";
+        }
     } else {
-        songName = "The Sign";
+        songName = song;
     }
     
     spotify
@@ -101,13 +115,20 @@ function mySpotify() {
     });
 }
 
-function movieThis() {
+function movieThis(movie) {
 
-    var movieName = process.argv[3];
+    var movieName;
 
-    if(!process.argv[3]) {
-        movieName = "Mr. Nobody";
-    } 
+    if(!movie) {
+        movieName = process.argv[3];
+
+        if(!process.argv[3]) {
+            movieName = "Mr. Nobody";
+        } 
+    } else {
+        movieName = movie;
+    }
+
 
     var url = "http://www.omdbapi.com/?t=" + movieName +"&y=&plot=short&apikey=trilogy";
     // console.log(url);
@@ -136,3 +157,43 @@ function movieThis() {
   }
 });
 } 
+
+function doWhatItSay() {
+
+    fs.readFile("random.txt", "utf8", function(err, data) {
+        if (err) {
+          return console.log(err);
+        }
+      
+        // Break the string down by comma separation and store the contents into the output array.
+        var output = data.split(",");
+
+        var whatToDo = output[0];
+        var parameter = output[1];
+        
+        console.log(whatToDo);
+        console.log(parameter);
+
+        switch(whatToDo) {
+            case "my-tweets":
+                myTweets();
+                break;
+            case "spotify-this-song":
+                mySpotify(parameter);
+                break;
+            case "movie-this":
+                movieThis(parameter);
+                break;
+            default:
+                console.log("I don't undertand what it says!")
+        }
+      
+        // // Loop Through the newly created output array
+        // for (var i = 0; i < output.length; i++) {
+      
+        //   // Print each element (item) of the array/
+        //   console.log(output[i]);
+        // }
+      });
+
+}
