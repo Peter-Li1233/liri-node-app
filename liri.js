@@ -38,15 +38,24 @@ switch(liriArguments) {
         console.log("Please type in your arguments carefully")
 }
 
-function myTweets() { 
+function myTweets(screenName) { 
     var client = new Twitter({
     consumer_key: keys.twitter.consumer_key,
     consumer_secret: keys.twitter.consumer_secret,
     access_token_key: keys.twitter.access_token_key,
     access_token_secret: keys.twitter.access_token_secret
     });
+
+    var twitterOwner;
     
-    var params = {screen_name: 'PeterLi48661338',
+    if(!screenName) {
+        twitterOwner = 'PeterLi48661338';
+    } else {
+        twitterOwner = screenName;
+    }
+
+    console.log(twitterOwner);
+    var params = {screen_name: twitterOwner,
                 //   id:'1020358710923755522',
                 //   count: 10,
                 //   result_type: 'recent',
@@ -176,7 +185,7 @@ function doWhatItSay() {
 
         switch(whatToDo) {
             case "my-tweets":
-                myTweets();
+                myTweets(parameter);
                 break;
             case "spotify-this-song":
                 mySpotify(parameter);
