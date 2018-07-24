@@ -73,6 +73,7 @@ function myTweets(screenName) {
                 tweets[i].created_at + "\r\n" + 
                 "\r\n";
                 console.log(twitterResults);
+                log(twitterResults);
         }
     } else {
         console.log("Error" + error);
@@ -109,13 +110,15 @@ function mySpotify(song) {
         for(i=0;i<songsInfo.length;i++) {
             // console.log(response.tracks.items[i]);
             var count = i+1;
-          
-            console.log("---------"+ count +"---------")
-            console.log("Artist: " + songsInfo[i].artists[0].name);
-            console.log("Song: " + songsInfo[i].name);
-            console.log("Album: " + songsInfo[i].album.name);
-            console.log("Preview: " + songsInfo[i].preview_url);
-            console.log ("");
+            var songResults = "---------"+ count +"---------" + "\r\n" +
+                                "Artist: " + songsInfo[i].artists[0].name +"\r\n" +
+                                "Song: " + songsInfo[i].name +"\r\n" +
+                                "Album: " + songsInfo[i].album.name +"\r\n" +
+                                "Preview: " + songsInfo[i].preview_url +"\r\n" +
+                                " " + "\r\n";
+            console.log(songResults);
+            
+            log(songResults);
             
         }
     })
@@ -159,8 +162,9 @@ function movieThis(movie) {
                            "Country: " + movieInfo.Country                    +"\r\n" +
                            "Plot: " + movieInfo.Plot                          +"\r\n" +
                            "Actors: " + movieInfo.Actors                      +"\r\n" +
-    "-----------------------------------------------------------------------";
+    "-----------------------------------------------------------------------" +"\r\n";
     console.log(movieResults);
+    log(movieResults);
   } else {
       console.log("Error: " + error);
   }
@@ -205,4 +209,21 @@ function doWhatItSay() {
         // }
       });
 
+}
+
+function log(terminalData) {
+    // fs.appendFileSync("log.txt",terminalData, function(err){
+    //     if (err) {
+    //         console.log("Error: " + err);
+    //         }
+    //     console.log('Terminal Data Saved!');
+
+    // });
+
+    try {
+        fs.appendFileSync('log.txt', terminalData, "utf8");
+        console.log('Terminal Data Saved!');
+      } catch (err) {
+        console.log("Error: " + err);
+      }
 }

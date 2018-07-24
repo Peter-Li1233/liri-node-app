@@ -1,0 +1,145 @@
+----------------------------Movie Information--------------------------
+Title:          Basic Instinct
+Year:           1992
+IMDB Rating:     6.9
+Rotten Tomatoes Rating: 53%
+Country: France, USA, UK
+Plot: A violent, suspended police detective investigates a brutal murder, in which a manipulative and seductive woman could be involved.
+Actors: Michael Douglas, Sharon Stone, George Dzundza, Jeanne Tripplehorn
+-----------------------------------------------------------------------
+------------------------------ 1 ------------------------------
+@PeterLi48661338: You can meet with Triumph and Disaster, and treat those two impostors just the same.  ---Joseph Merz
+Sun Jul 22 13:49:52 +0000 2018
+
+------------------------------ 2 ------------------------------
+@PeterLi48661338: Exuberance may be a good thing, as things useful find their places and things bad disappear.
+Sun Jul 22 13:38:10 +0000 2018
+
+------------------------------ 3 ------------------------------
+@PeterLi48661338: Node.js is very cool!
+Sat Jul 21 13:46:10 +0000 2018
+
+------------------------------ 4 ------------------------------
+@PeterLi48661338: It seems to me that learning programming/APIs opens a new world in front of me!
+Fri Jul 20 17:30:17 +0000 2018
+
+---------1---------
+Artist: Drake
+Song: God's Plan
+Album: Scary Hours
+Preview: null
+ 
+---------2---------
+Artist: Drake
+Song: God's Plan
+Album: Scorpion
+Preview: null
+ 
+---------3---------
+Artist: William Singe
+Song: God's Plan
+Album: God's Plan
+Preview: https://p.scdn.co/mp3-preview/3fd0df79fa3f36628f95d191a65948d36e6937c4?cid=f84bc5cac6a04d0e834ff5ae9598fc6a
+ 
+---------4---------
+Artist: Drake
+Song: God's Plan
+Album: Scary Hours
+Preview: null
+ 
+---------5---------
+Artist: Our Last Night
+Song: God's Plan
+Album: God's Plan
+Preview: https://p.scdn.co/mp3-preview/5c1bf3e882101adb1e962bb002993b2e0f121b69?cid=f84bc5cac6a04d0e834ff5ae9598fc6a
+ 
+---------6---------
+Artist: Kidz Bop Kids
+Song: God's Plan
+Album: KIDZ BOP 38
+Preview: null
+ 
+---------7---------
+Artist: Fame on Fire
+Song: God's Plan
+Album: God's Plan
+Preview: https://p.scdn.co/mp3-preview/8ad4b086ab1b11b3d663bb25e72178042cebba53?cid=f84bc5cac6a04d0e834ff5ae9598fc6a
+ 
+---------8---------
+Artist: CHVRCHES
+Song: God's Plan
+Album: Love Is Dead
+Preview: null
+ 
+---------9---------
+Artist: Thoreau
+Song: God's Plan
+Album: God's Plan
+Preview: https://p.scdn.co/mp3-preview/b59f53c0eb0900358ede850bd2496fee08e7bdd9?cid=f84bc5cac6a04d0e834ff5ae9598fc6a
+ 
+---------10---------
+Artist: Simple Plan
+Song: God Must Hate Me
+Album: No Pads, No Helmets...Just Balls (15th Anniversary Tour Edition)
+Preview: https://p.scdn.co/mp3-preview/3984c1107fa7ff432f627ff8cfdc49a9ad080072?cid=f84bc5cac6a04d0e834ff5ae9598fc6a
+ 
+---------11---------
+Artist: Kid Travis
+Song: God's Plan
+Album: God's Plan
+Preview: https://p.scdn.co/mp3-preview/84ca77758c452b3b6c510b3630fb1a8916043454?cid=f84bc5cac6a04d0e834ff5ae9598fc6a
+ 
+---------12---------
+Artist: Sevnth
+Song: God's Plan
+Album: God's Plan
+Preview: https://p.scdn.co/mp3-preview/a14a80324e3e960c9940f2d317d0e6e7a1b011f9?cid=f84bc5cac6a04d0e834ff5ae9598fc6a
+ 
+---------13---------
+Artist: Pawcut
+Song: Sidewinder
+Album: God's Plan
+Preview: https://p.scdn.co/mp3-preview/fa7846248c90f18a0dc7e29c7ba764b9c27f78f9?cid=f84bc5cac6a04d0e834ff5ae9598fc6a
+ 
+---------14---------
+Artist: B Lou
+Song: God’s Plan - Instrumental
+Album: God’s Plan (Instrumental)
+Preview: https://p.scdn.co/mp3-preview/13f61f76115f8107246991b532acbe5748b521f7?cid=f84bc5cac6a04d0e834ff5ae9598fc6a
+ 
+---------15---------
+Artist: Cimorelli
+Song: God's Plan
+Album: God's Plan
+Preview: https://p.scdn.co/mp3-preview/62c4ed2a8b21d1c98c3f02650c8fcd13b46ac5b4?cid=f84bc5cac6a04d0e834ff5ae9598fc6a
+ 
+---------16---------
+Artist: Drake
+Song: God's Plan
+Album: Scorpion
+Preview: null
+ 
+---------17---------
+Artist: Angtoria
+Song: Confide In Me
+Album: God Has A Plan For Us All
+Preview: https://p.scdn.co/mp3-preview/90f613c9ecfc1ca2298e08ed6924d8920e286100?cid=f84bc5cac6a04d0e834ff5ae9598fc6a
+ 
+---------18---------
+Artist: Pawcut
+Song: Boombayeah
+Album: God's Plan
+Preview: https://p.scdn.co/mp3-preview/5628a819097964f2a560b0a5c0cbf0a7afc77d68?cid=f84bc5cac6a04d0e834ff5ae9598fc6a
+ 
+---------19---------
+Artist: Q.Z.B
+Song: God's Plan
+Album: God's Plan
+Preview: https://p.scdn.co/mp3-preview/85308382b0df0b9dbb243d476293c878bf51b0a6?cid=f84bc5cac6a04d0e834ff5ae9598fc6a
+ 
+---------20---------
+Artist: Angtoria
+Song: God Has A Plan For Us All
+Album: God Has A Plan For Us All
+Preview: https://p.scdn.co/mp3-preview/7a831e569e6b7a3dbcf02e0d1808ee1b049f615d?cid=f84bc5cac6a04d0e834ff5ae9598fc6a
+ 
