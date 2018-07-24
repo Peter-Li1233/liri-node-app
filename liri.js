@@ -8,6 +8,9 @@ var keys = require("./key.js");
 // console.log(keys);
 // console.log(keys.twitter.access_token_key);
 
+//get the reference to "request" package;
+var request = require("request");
+
 //get the reference to the Twitter package;
 var Twitter = require('twitter');
 var liriArguments = process.argv[2];
@@ -18,6 +21,9 @@ switch(liriArguments) {
         break;
     case "spotify-this-song":
         mySpotify();
+        break;
+    case "movie-this":
+        movieThis();
         break;
     default:
         console.log("Please type in your arguments carefully")
@@ -94,3 +100,39 @@ function mySpotify() {
         console.log(err);
     });
 }
+
+function movieThis() {
+
+    var movieName = process.argv[3];
+
+    if(!process.argv[3]) {
+        movieName = "Mr. Nobody";
+    } 
+
+    var url = "http://www.omdbapi.com/?t=" + movieName +"&y=&plot=short&apikey=trilogy";
+    // console.log(url);
+    
+    request(url, function(error, response, body) {
+
+   // If there were no errors and the response code was 200 (i.e. the request was successful)...
+    if (!error && response.statusCode === 200) {
+
+    // Then we print out the imdbRating
+    //console.log(JSON.parse(body));
+    var movieInfo = JSON.parse(body);
+    var movieResults = 
+    "----------------------------Movie Information--------------------------" +"\r\n" +
+                           "Title:          " + movieInfo.Title               +"\r\n" +
+                           "Year:           " + movieInfo.Year                +"\r\n" +
+                           "IMDB Rating:     " + movieInfo.imdbRating          +"\r\n" +
+                           "Rotten Tomatoes Rating: " + movieInfo.Ratings[1].Value +"\r\n" +
+                           "Country: " + movieInfo.Country                    +"\r\n" +
+                           "Plot: " + movieInfo.Plot                          +"\r\n" +
+                           "Actors: " + movieInfo.Actors                      +"\r\n" +
+    "-----------------------------------------------------------------------";
+    console.log(movieResults);
+  } else {
+      console.log("Error: " + error);
+  }
+});
+} 
